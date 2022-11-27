@@ -41,16 +41,16 @@ class MainActivityTest {
                 isDisplayed()
             )
         )
-        textInputEditText.perform(replaceText("04935689994"), closeSoftKeyboard())
+        textInputEditText.perform(replaceText("99999999999"), closeSoftKeyboard())
 
         val editText = onView(
             allOf(
-                withId(R.id.milesDisplay), withText("04935689994"),
+                withId(R.id.milesDisplay), withText("99999999999"),
                 withParent(withParent(withId(R.id.milesDisplayLayout))),
                 isDisplayed()
             )
         )
-        editText.check(matches(withText("04935689994")))
+        editText.check(matches(withText("99999999999")))
     }
 
     private fun childAtPosition(
